@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(#111345, #262dfa);
+}
+
+:root{
+    --calculator-background: #01020e;
+    --green-buttons: rgb(89, 245, 89);
+    --cancel: rgb(243, 60, 60);
+    --delete: rgb(55, 224, 55);
+    --btn-background: #111111;
+}
+
+.calculator{
+    background: var(--calculator-background);
+    max-width: 360px;
+    min-width: 300px;
+    padding: 10px;
+    max-height: 570px;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.time-c{
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 5px;
+}
+
+.words{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.statistika{
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.cursor{
+    height: 30px;
+    width: 1px;
+    margin-left: 270px;
+    margin-top: 30px;
+    background: deepskyblue;
+}
+
+.upper-img-c{
+    color: #fff;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 26px;
+}
+
+.upper-img-c>i{
+    color: var(--delete);
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.upper-img i{
+    letter-spacing: 15px;
+    cursor: pointer;
+}
+
+.ara{
+    width: 100%;
+    background: grey;
+    height: 1px;
+    opacity: .5;
+}
+
+.buttons-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.numbers-c{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons-c button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.green-btn{
+    color: var(--green-buttons);
+    background: var(--btn-background);
+}
+
+.number{
+    color: #fff;
+    background: var(--btn-background);
+
+}
+
+.cancel{
+    color: var(--cancel);
+    background: var(--btn-background);
+}
+
+.equal{
+    color: #fff;
+    background-color: rgb(12, 131, 12);
+}
