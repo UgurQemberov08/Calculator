@@ -21,14 +21,14 @@ body{
     --calculator-background: #01020e;
     --green-buttons: rgb(89, 245, 89);
     --cancel: rgb(243, 60, 60);
-    --delete: rgb(55, 224, 55);
+    --delete: rgb(0, 255, 0);
     --btn-background: #111111;
 }
 
 .calculator{
     background: var(--calculator-background);
-    max-width: 360px;
-    min-width: 300px;
+    max-width: 335px;
+    min-width: 335px;
     padding: 10px;
     max-height: 570px;
     margin-top: 40px;
@@ -56,11 +56,16 @@ body{
 }
 
 .cursor{
+    padding: 0 5px;
     height: 30px;
-    width: 1px;
+    width: 100%;
     margin-left: 270px;
     margin-top: 30px;
-    background: deepskyblue;
+    color: rgb(26, 189, 26);
+    font-size: 20px;
+    font-weight: 600;
+    transform: translate(-84%);
+    text-align: right;
 }
 
 .upper-img-c{
@@ -74,7 +79,7 @@ body{
 
 .upper-img-c>i{
     color: var(--delete);
-    opacity: 0.6;
+    opacity: 0.8;
     cursor: pointer;
 }
 
