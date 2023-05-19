@@ -16,6 +16,7 @@ let cursor = document.querySelector(".cursor");
 let counter = 0;
 cursor.innerText = counter;
 
+
 let Add0 = () => cursor.innerText = counter = 0
     Add1 = () => cursor.innerText = ++counter
     Add2 = () => cursor.innerText = counter += 2
@@ -29,9 +30,6 @@ let Add0 = () => cursor.innerText = counter = 0
     Reset = () => cursor.innerText = counter *= 0
     Delete = () => {
         let a = cursor.innerText = counter %= 10
-        let b = cursor.innerText -= a
-        return b
-        //don't work
     }
     
 
